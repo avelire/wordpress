@@ -1,0 +1,128 @@
+/*
+Theme Name: Engrave-child
+Theme URI: http://www.thinkupthemes.com/themes/engrave/
+Author: Val Ng & Rafi Yagudin
+Author URI: http://www.valndesign.com
+Description: Modified Engrave theme to be compatible with SmartPost
+Template: Engrave
+Version: 1.0.0
+License: GNU General Public License
+License URI: /licenses/license.txt
+Tags: black, dark, one-column, two-columns, right-sidebar, left-sidebar, flexible-width, custom-header, custom-menu, flexible-width, full-width-template, theme-options, threaded-comments, editor-style, featured-images, post-formats, sticky-post
+*/
+
+
+/* for formatting SP Categories */
+.the-posts{
+    position: relative;
+}
+.the-posts #post-view-format{
+    display: block;
+    clear: both;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.site-content nav {
+	clear: both;
+	line-height: 2;
+	overflow: hidden;
+
+.site-content article {
+	border-bottom: 4px double #ededed;
+	margin-bottom: 16px;
+	margin-bottom: 1.142857rem;
+	padding-bottom: 15px;
+	padding-bottom: .9375rem;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+    position: relative;
+}
+
+.site-content article:hover{
+    border-bottom: 4px double #d7d7d7;
+}
+
+.site-content {
+		float: left;
+		width: 65.104166667%;
+	}
+	body.template-front-page .site-content,
+	body.attachment .site-content,
+	body.full-width .site-content {
+		width: 100%;
+	}
+
+/* makes pre-header menu visible on mobile */
+#pre-header-links-inner {
+    display: block;
+}
+
+/* custom css to modify links and hover colours on main page */
+#site-logo a img{
+	width: 100%;
+}
+
+.sc-carousel a.prev, .sc-carousel a.next {
+position: absolute;
+top: 50%;
+margin-top: -15px;
+background: #2c3134;
+text-align: center;
+width: 30px;
+height: 30px;
+display: block;
+}
+
+#pre-header-search .search {
+padding: 2px 10px;
+max-width: 120px;
+background: #FFFFFF;
+border: 1px solid #333;
+}
+
+#intro.option1 {
+padding: 25px 10px;
+border: none;
+background: inherit;
+/*-webkit-box-shadow: inset 0 0 0 1px #FFF;
+-moz-box-shadow: inset 0 0 0 1px white;
+-ms-box-shadow: inset 0 0 0 1px white;
+-o-box-shadow: inset 0 0 0 1px white;
+box-shadow: inset 0 0 0 1px #FFF; */
+}
+
+.hover-icons {
+  display: none;
+}
+
+.sc-carousel .entry-header .hover-link { 
+/* .hover-link { */
+  display: none;
+}
+
+.sc-carousel .entry-header .hover-zoom { 
+/*  .hover-zoom { */
+  display: none;
+}
+
+.sc-carousel .entry-header .image-overlay-inner { 
+ /* .image-overlay-inner { */
+  display: none;
+}
+
+.sc-carousel .entry-header .image-overlay {
+  display: none;
+}
+
+
+.sc-carousel .entry-header {
+  display: block;
+}
+
+.sc-carousel .entry-content {
+  display: block;
+}
+
