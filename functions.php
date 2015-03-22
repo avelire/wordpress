@@ -163,6 +163,25 @@ function thinkup_widgets_init() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
+
+    register_sidebar( array(
+        'name' => __( 'First Front Page Widget Area', 'Engrave' ),
+        'id' => 'sidebar-2',
+        'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'Engrave' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Second Front Page Widget Area', 'Engrave' ),
+        'id' => 'sidebar-3',
+        'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'Engrave' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
     
     $sp_cat_sidebar_id = register_sidebar( array(
         'name' => __( 'Category Header Widget Area', 'Engrave' ),
