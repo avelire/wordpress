@@ -153,6 +153,16 @@ add_filter( 'wp_nav_menu_items', 'login_menu_item' );
  * Registers our main widget area and the front page widget areas.
  */
 function thinkup_widgets_init() {
+
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar', 'Engrave' ),
+        'id' => 'sidebar-1',
+        'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'Engrave' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
     
     $sp_cat_sidebar_id = register_sidebar( array(
         'name' => __( 'Category Header Widget Area', 'Engrave' ),
