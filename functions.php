@@ -152,7 +152,7 @@ add_filter( 'wp_nav_menu_items', 'login_menu_item' );
  *
  * Registers our main widget area and the front page widget areas.
  */
-function thinkup_widgets_init() {
+function Engrave_widgets_init() {
 
     register_sidebar( array(
         'name' => __( 'Main Sidebar', 'Engrave' ),
@@ -197,7 +197,7 @@ function thinkup_widgets_init() {
      */
     define('SP_CAT_SIDEBAR', $sp_cat_sidebar_id);
 }
-add_action( 'widgets_init', 'thinkup_widgets_init' );
+add_action( 'widgets_init', 'Engrave_widgets_init' );
 
 
 
